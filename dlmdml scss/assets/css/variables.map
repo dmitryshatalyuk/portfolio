@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"// Template defaults\r\n$titlesFont: \"AG Book Pro\", serif;\r\n$textFont: \"Roboto\", serif;\r\n$maxContentWidth: 1350px;\r\n\r\n// Font Weight\r\n$thin: 300;\r\n$default: 400;\r\n$bold: 700;\r\n\r\n// Colors\r\n$blue: #2193ff;\r\n$medium-blue: #166ec1;\r\n$dream-blue: #123eba;\r\n$white: #ffffff;\r\n$black: #000000;\r\n$footerBackColor: #ededed;\r\n\r\n//Mixins\r\n@mixin defaultTransition {\r\n  -webkit-transition: all 0.2s ease-in-out;\r\n  transition: all 0.2s ease-in-out;\r\n}\r\n\r\n@mixin default-title-styles {\r\n  font-family: $titlesFont;\r\n  font-size: 41px;\r\n  font-weight: $default;\r\n  line-height: 120%;\r\n  letter-spacing: 5.8px;\r\n  margin-bottom: 22px;\r\n  color: #000000;\r\n}\r\n\r\n@mixin flexbox {\r\n  display: -webkit-box;\r\n  display: -ms-flexbox;\r\n  display: flex;\r\n}\r\n\r\n@mixin justify-content-space-between {\r\n  -webkit-box-pack: justify;\r\n  -ms-flex-pack: justify;\r\n  justify-content: space-between;\r\n}\r\n\r\n@mixin justify-content-space-around {\r\n  -ms-flex-pack: distribute;\r\n  justify-content: space-around;\r\n}\r\n\r\n@mixin justify-content-center {\r\n  -webkit-box-pack: center;\r\n  -ms-flex-pack: center;\r\n  justify-content: center;\r\n}\r\n\r\n@mixin align-items-center {\r\n  -webkit-box-align: center;\r\n  -ms-flex-align: center;\r\n  align-items: center;\r\n}\r\n\r\n@mixin flex-direction-col {\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n  -ms-flex-direction: column;\r\n  flex-direction: column;\r\n}\r\n\r\n@mixin flex-direction-row {\r\n  -webkit-box-orient: horizontal;\r\n  -webkit-box-direction: normal;\r\n  -ms-flex-direction: row;\r\n  flex-direction: row;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ""
+}

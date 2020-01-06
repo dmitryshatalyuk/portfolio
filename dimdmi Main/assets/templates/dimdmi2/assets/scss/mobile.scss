@@ -1,0 +1,134 @@
+@import "variables";
+@media screen and (max-width: 415px) {
+  .page-intro .intro-text-box .intro-title {
+    font-size: 25px;
+  }
+
+  .page-intro {
+    padding: 175px 0 155px;
+    .intro-text-box .intro-text {
+      font-size: 14px;
+    }
+  }
+
+  .page-main .main-content .agency-features-container .feature-row .feature-box {
+    max-width: 100%;
+  }
+  .page-main .main-content {
+    .title {
+      font-size: 35px;
+      &::after {
+        width: 153px;
+      }
+    }
+
+    .our-team {
+      .title.our-team-title {
+        &::after {
+          width: 108px;
+        }
+      }
+      .team-members-box .team-member .team-member-image-box {
+        width: 290px;
+        height: 279px;
+      }
+    }
+
+    .portfolio {
+      .title.portfolio-title {
+        &:after {
+          width: 190px;
+        }
+      }
+    }
+
+    .rates {
+      margin-top: 45px;
+      .title.rates-title {
+        &::after {
+          width: 115px;
+        }
+      }
+    }
+  }
+  .slick-slider {
+    zoom: 0.64;
+  }
+
+  .page-main .rates .rates-slide .rates-slide-content:nth-child(1n) {
+    width: 431px;
+  }
+
+  .page-main .rates .rates-slide .rates-slide-image {
+    width: 146px;
+    height: 146px;
+    margin-right: 10px;
+  }
+
+  .page-main .rates .rates-slide .rates-slide-content {
+    width: 350px;
+    padding: 8px 15px 8px 15px;
+    float: none;
+  }
+
+  .page-main .rates .rates-slide .rates-slide-content .rates-slide-title {
+    font-size: 25px;
+  }
+
+  .footer {
+    .footer-content {
+      .footer-contact-box {
+        @include flex-direction-col;
+        max-width: 484px;
+        margin: 0 auto;
+        min-width: 295px;
+        .footer-navigation,
+        .socials {
+          margin: 0;
+          margin-bottom: 15px;
+
+          .footer-nav-list,
+          .socials-list {
+            @include flexbox;
+            @include justify-content-space-between;
+
+            .footer-nav-list-item,
+            .socials-list-item {
+              .footer-nav-link,
+              .social-link {
+                margin: 0;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .form-container {
+        max-width: 414px;
+
+        .form-subtitle {
+          font-size: 12px;
+          margin-top: 5px;
+        }
+
+        .form {
+          .input {
+            max-width: 90%;
+          }
+          .policies {
+            font-size: 8px;
+            align-items: center;
+            max-width: 85%;
+            width: 85%;
+          }
+        }
+      }
+    }
+    .footer-info {
+      display: none;
+    }
+    .copyright {
+      font-size: 12px;
+    }
+  }
+}

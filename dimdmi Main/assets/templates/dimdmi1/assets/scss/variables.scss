@@ -1,0 +1,76 @@
+// Template defaults
+$titlesFont: "AG Book Pro", serif;
+$textFont: "Roboto", serif;
+$maxContentWidth: 1350px;
+
+// Font Weight
+$thin: 300;
+$default: 400;
+$bold: 700;
+
+// Colors
+$blue: #2193ff;
+$medium-blue: #166ec1;
+$dream-blue: #123eba;
+$white: #ffffff;
+$black: #000000;
+$footerBackColor: #ededed;
+
+//Mixins
+@mixin defaultTransition {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin default-title-styles {
+  font-family: $titlesFont;
+  font-size: 41px;
+  font-weight: $default;
+  line-height: 120%;
+  letter-spacing: 5.8px;
+  margin-bottom: 22px;
+  color: #000000;
+}
+
+@mixin flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin justify-content-space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@mixin justify-content-space-around {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+@mixin justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@mixin align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@mixin flex-direction-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@mixin flex-direction-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}

@@ -1,0 +1,265 @@
+/* display flex settings */
+/* */
+@media screen and (max-width: 851px) {
+  /* line 4, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper {
+    position: relative;
+  }
+  /* line 7, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    left: 0;
+  }
+  /* line 13, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 16, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item {
+    -webkit-transform: translate3d(110%, 0, 0);
+    transform: translate3d(110%, 0, 0);
+    width: 80%;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  /* line 24, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item.nav-list-item-shown {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /* line 28, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 32, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  /* line 36, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(4) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  /* line 40, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(5) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  /* line 45, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 18px;
+  }
+  /* line 47, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link::after {
+    display: none;
+  }
+  /* line 50, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link.question {
+    display: inline-block;
+  }
+  /* line 58, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box {
+    display: block;
+    width: 32px;
+    height: 22px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  /* line 67, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar {
+    width: 32px;
+    height: 4px;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  /* line 75, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar1 {
+    top: 0;
+  }
+  /* line 77, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar1.bar1-clicked {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 9px;
+  }
+  /* line 83, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar2 {
+    top: 9px;
+  }
+  /* line 85, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar2.bar2-clicked {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  /* line 90, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar3 {
+    top: 18px;
+  }
+  /* line 92, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar3.bar1-clicked {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 9px;
+  }
+  /* line 102, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content {
+    max-width: 90%;
+  }
+  /* line 104, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container {
+    max-width: 100%;
+  }
+  /* line 106, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-title {
+    font-size: 37px;
+  }
+  /* line 109, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-subtitle {
+    font-size: 30px;
+  }
+  /* line 112, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-text {
+    font-size: 16px;
+  }
+  /* line 120, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /* line 124, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+  }
+  /* line 128, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box {
+    max-width: 90%;
+    margin-bottom: 60px;
+  }
+  /* line 134, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work {
+    padding: 57px 0 0;
+  }
+  /* line 137, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 140, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step {
+    margin-bottom: 70px;
+  }
+  /* line 143, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-circle {
+    height: 200px;
+    width: 200px;
+    border: 29px solid #92caff;
+  }
+  /* line 148, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-title {
+    letter-spacing: 2.3px;
+    font-size: 22px;
+  }
+  /* line 156, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 159, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box {
+    width: 50%;
+    border: none;
+  }
+  /* line 162, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border-right: 1px solid #b6b6b6;
+  }
+  /* line 166, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(2) {
+    border-bottom: 1px solid #b6b6b6;
+  }
+  /* line 172, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container {
+    padding: 0 50px;
+  }
+  /* line 178, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 180, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation {
+    margin-bottom: 25px;
+  }
+  /* line 182, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 18px;
+  }
+  /* line 186, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-socials .social-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 194, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header {
+    background-image: url(../images/tablet-header-back.png);
+    position: relative;
+    z-index: 10;
+  }
+  /* line 199, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro {
+    padding: 234px 0;
+  }
+  /* line 203, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main {
+    position: relative;
+    z-index: 2;
+    top: -35px;
+    margin-bottom: -35px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  /* line 212, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container {
+    padding: 0 20px;
+  }
+  /* line 215, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .slide-text {
+    max-width: 96%;
+  }
+  /* line 219, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=tablet.css.map */

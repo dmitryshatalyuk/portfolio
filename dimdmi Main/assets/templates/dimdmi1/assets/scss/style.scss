@@ -1,0 +1,899 @@
+@import "variables";
+
+/* About, Why we are chosen, Services, Portfolio, Rates, Contacts */
+body {
+  font-family: $textFont;
+}
+.title {
+  @include default-title-styles;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: $white;
+  padding: 25px 0;
+  // -webkit-transition: all 0.15s ease-in-out;
+  // transition: all 0.15s ease-in-out;
+  @include defaultTransition;
+  z-index: 999;
+}
+
+.scrolled {
+  padding: 15px 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header-wrapper {
+  @include flexbox;
+  @include align-items-center;
+  @include justify-content-space-between;
+  padding: 0 10px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* dIMdMI TEMPLATES*/
+
+.logo {
+  color: $blue;
+  font-family: $titlesFont;
+  font-size: 40px;
+  font-weight: $bold;
+}
+
+.logo-span {
+  font-size: 25px;
+}
+
+.logo-span--I {
+  font-size: 32px;
+}
+
+.logo-name {
+  color: #7f7f7f;
+  font-family: $titlesFont;
+  font-size: 9px;
+  font-weight: $default;
+  text-transform: uppercase;
+  letter-spacing: 9.4px;
+}
+
+/*  */
+
+.bars-box {
+  display: none;
+}
+
+/* Navigation */
+
+.nav-links-container {
+  @include flexbox;
+}
+
+.nav-links-box {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* #about, #services, #portfolio, #rates, #contacts */
+
+.nav-link {
+  color: $blue;
+  font-family: $titlesFont;
+  font-size: 16px;
+  font-weight: $default;
+  letter-spacing: 2.2px;
+  padding: 10px 12px;
+  display: block;
+  // -webkit-transition: all 0.2s ease-in-out;
+  // transition: all 0.2s ease-in-out;
+  @include defaultTransition;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+/* Intro */
+
+.intro {
+  padding-top: 222px;
+  padding-bottom: 222px;
+  background-image: url(../images/header-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro-container {
+  max-width: 900px;
+  padding: 25px 41px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #00000075;
+  margin-bottom: 44px;
+}
+
+/* Upgrade your business with dIMdMI templates */
+
+.intro-title {
+  max-width: 863px;
+  color: $white;
+  font-family: $titlesFont;
+  font-size: 58px;
+  font-weight: $default;
+  line-height: 120%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* Increase your sell level with this wonde... */
+
+.intro-text {
+  max-width: 780px;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: $thin;
+  line-height: 120%;
+  display: block;
+  margin: 0 auto;
+}
+
+.intro-goDown-link-box {
+  @include flexbox;
+  @include justify-content-space-around;
+}
+
+/* click it and go down */
+
+.intro-goDown-link {
+  color: $white;
+  font-family: $textFont;
+  font-size: 28px;
+  font-weight: $thin;
+  line-height: 120%;
+  letter-spacing: 2.8px;
+  /* text-transform: uppercase; */
+  background-color: $blue;
+  padding: 15px 30px;
+  display: inline-block;
+  // -webkit-transition: -webkit-filter 0.15s ease-in-out;
+  // transition: -webkit-filter 0.15s ease-in-out;
+  // transition: filter 0.15s ease-in-out;
+  // transition: filter 0.15s ease-in-out, -webkit-filter 0.15s ease-in-out;
+  @include defaultTransition;
+  &:hover {
+    -webkit-filter: brightness(93%);
+    filter: brightness(93%);
+  }
+}
+
+/* Main */
+
+.main {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* About section */
+
+.about {
+  padding: 45px 0 55px;
+}
+
+.about-container {
+  @include flexbox;
+  @include justify-content-space-between;
+
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.about-left-box {
+  max-width: 50%;
+}
+
+/* Creating projects in th... */
+
+.about-text {
+  word-break: normal;
+  color: $black;
+  font-family: $textFont;
+  font-size: 15px;
+  font-weight: $thin;
+  line-height: 120%;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.more-button,
+.hide-button {
+  display: none;
+}
+
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+.about-right-box {
+  width: 45%;
+}
+
+.about-right-box--image-big {
+  width: 100%;
+  height: 366px;
+  -webkit-box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  background-image: url(../images/about-image-big.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.about-right-box--image-small {
+  height: 70%;
+  width: 70%;
+  -webkit-box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  background-image: url(../images/about-image-little.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  z-index: 3;
+}
+
+/* Why we are chosen section */
+
+.why-we-are-chosen {
+  padding-bottom: 55px;
+}
+
+.reasons-container {
+  @include flexbox;
+  @include justify-content-space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.reason-box {
+  @include flexbox;
+}
+
+.reason-circle-image-border {
+  padding: 10px;
+  border: 1px dashed $blue;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.reason-circle-image {
+  height: 150px;
+  width: 150px;
+  background-color: $blue;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+
+.wwac-experts {
+  background-image: url(../images/wwac-team.png);
+}
+
+.wwac-result {
+  background-image: url(../images/wwac-result.png);
+}
+
+.wwac-quality {
+  background-image: url(../images/wwac-quality.png);
+}
+
+.reasons-text-box {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+/* Best experts, Fast result, Great quality */
+
+.reason-title {
+  color: $black;
+  font-family: $titlesFont;
+  font-size: 29px;
+  font-weight: $default;
+  line-height: 55px;
+}
+
+/* Only best exper.. */
+
+.reason-text {
+  width: 198px;
+  color: $black;
+  font-family: $textFont;
+  font-size: 14px;
+  font-weight: $thin;
+  line-height: 20px;
+}
+
+/* Services section */
+
+.service {
+  padding-bottom: 50px;
+}
+
+.services-title {
+  margin-bottom: 0;
+}
+
+.services-title-text {
+  color: $black;
+  font-family: $textFont;
+  font-size: 14px;
+  font-weight: $thin;
+  letter-spacing: 1.8px;
+}
+
+.plans-container {
+  @include flexbox;
+  @include justify-content-space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.plan-box {
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  width: 325px;
+  word-break: break-all;
+}
+
+/* Basic, Medium, Seller’s Dream */
+
+.plan-title {
+  background-color: $blue;
+  color: $white;
+  font-family: $titlesFont;
+  font-size: 28px;
+  font-weight: $default;
+  line-height: 67px;
+  letter-spacing: 3.9px;
+  text-align: center;
+}
+
+.medium {
+  background-color: $medium-blue;
+}
+
+.dream {
+  background-color: $dream-blue;
+}
+
+.plan-benefits {
+  padding: 15px 40px;
+}
+
+.plan-medium .benefit {
+  color: $medium-blue;
+}
+
+.plan-dream .benefit {
+  color: $dream-blue;
+}
+
+/* Analyse the prob... */
+
+.benefit {
+  color: $blue;
+  font-family: $textFont;
+  font-size: 23px;
+  font-weight: $thin;
+  line-height: 40px;
+  .fa-check {
+    font-size: 19px;
+  }
+}
+
+.order-button-box {
+  @include flexbox;
+  @include justify-content-space-around;
+  padding-bottom: 25px;
+}
+
+/* $200 order, $400 order, $800 order */
+
+.order-button {
+  display: block;
+  /* Style for "200" */
+  color: $blue;
+  font-family: $titlesFont;
+  font-size: 34px;
+  font-weight: $default;
+  border: 1px solid $blue;
+  padding: 10px 25px;
+  position: relative;
+  // -webkit-transition: all 0.15s ease-in-out;
+  // transition: all 0.15s ease-in-out;
+  @include defaultTransition;
+  &:before {
+    content: "$";
+    font-size: 23px;
+    position: absolute;
+    top: 9px;
+    left: 13px;
+  }
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.order-button-medium {
+  color: $medium-blue;
+  border-color: $medium-blue;
+  &:hover {
+    background-color: $medium-blue;
+  }
+}
+
+.order-button-dream {
+  color: $dream-blue;
+  border-color: $dream-blue;
+  &:hover {
+    background-color: $dream-blue;
+  }
+}
+
+.order-button-span {
+  font-family: $textFont;
+  font-weight: $thin;
+}
+
+/* Portfolio section */
+
+.portfolio {
+  padding-bottom: 50px;
+}
+
+.portfolio-slide {
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: $white;
+  margin-right: 50px;
+  &:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.portfolio-slide-image {
+  background-image: url(../images/slide-image-1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 420px;
+  height: 283px;
+}
+
+.portfolio-slide-image-1 {
+  background-image: url(../images/slide-image-1.png);
+}
+
+.portfolio-slide-image-2 {
+  background-image: url(../images/slide-image-2.png);
+}
+
+.portfolio-slide-image-3 {
+  background-image: url(../images/slide-image-3.png);
+}
+
+.portfolio-slide-image-4 {
+  background-image: url(../images/slide-image-4.png);
+}
+
+.portfolio-slide-image-5 {
+  background-image: url(../images/slide-image-5.png);
+}
+
+.portfolio-slide-content {
+  width: 420px;
+  padding: 10px 25px;
+}
+
+/* An exciting village,... */
+
+.portfolio-slide-content--title {
+  color: $black;
+  font-family: $titlesFont;
+  font-size: 28px;
+  font-weight: $default;
+  line-height: 67px;
+  letter-spacing: 3.9px;
+  text-align: center;
+}
+
+.portfolio-slide-content--text {
+  color: $black;
+  font-family: $textFont;
+  font-size: 14px;
+  font-weight: $thin;
+  line-height: 27px;
+  display: block;
+}
+
+/* Slider plugin customization */
+
+.slick-list {
+  padding: 30px 0px 20px 13px;
+  margin-left: -13px;
+}
+
+.portfolio-slider .slick-slide {
+  margin: 0 13px;
+}
+
+.controls-positioning,
+.rates-controls-positioning {
+  padding-top: 15px;
+  max-width: 75px;
+  @include flexbox;
+
+  @include justify-content-space-between;
+  @include align-items-center;
+  margin: 0 auto;
+}
+
+.controls-positioning {
+  .prev,
+  .next {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.rates-controls-positioning {
+  .prev,
+  .next {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+/* Rates section */
+
+.rates {
+  padding-bottom: 50px;
+}
+
+.rates-slide {
+  cursor: -webkit-grab;
+  cursor: grab;
+  word-break: break-all;
+  width: 265px !important;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  padding: 25px 19px 15px;
+  margin-right: 50px;
+  line-height: 20px;
+  &:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+}
+
+/* Ben Simmons */
+
+.rates-slide--title {
+  color: $black;
+  font-family: $titlesFont;
+  font-size: 22px;
+  font-weight: $default;
+  display: block;
+}
+
+.rates-slide--text {
+  font-size: 14px;
+  color: $black;
+  font-family: $textFont;
+  font-weight: $thin;
+  display: block;
+}
+
+.stars-box {
+  margin: 7px 0 5px;
+}
+
+.fa-star {
+  color: $blue;
+}
+
+/* Contacts section */
+
+.contacts {
+  padding-bottom: 50px;
+}
+
+.contacts-container {
+  @include flexbox;
+
+  @include justify-content-space-between;
+  width: 65%;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: $white;
+  padding: 35px 35px 35px 18px;
+}
+
+.contacts-info {
+  margin-bottom: 15px;
+}
+
+.contacts-info-box {
+  margin-right: 25px;
+}
+
+/* Adress, E-mail, Instagram, Twitter, Facebook */
+
+.contacts-info-title {
+  font-size: 22px;
+  color: $black;
+  font-family: $titlesFont;
+  font-weight: $default;
+}
+
+.contacts-text {
+  color: $black;
+  font-family: $textFont;
+  font-size: 15px;
+  font-weight: $thin;
+}
+
+.map-container {
+  width: 60%;
+}
+
+.map-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.contacts-container-box {
+  @include flexbox;
+
+  @include justify-content-space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: $white;
+  padding: 25px 35px;
+  width: 30%;
+}
+
+/* Still have questions? */
+
+.form-title {
+  text-align: center;
+  font-family: $titlesFont;
+  font-weight: $default;
+  font-style: 22px;
+}
+
+/* Leave your contacts and we will call you */
+
+.form-text {
+  text-align: center;
+  font-family: $titlesFont;
+  font-weight: $default;
+  font-style: 17px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  @include flexbox;
+  @include justify-content-space-around;
+  @include align-items-center;
+  @include flex-direction-col;
+  text-align: left;
+  ::-webkit-input-placeholder,
+  :-ms-input-placeholder,
+  ::-ms-input-placeholder,
+  ::placeholder {
+    color: $black;
+    font-family: $textFont;
+    font-size: 14px;
+    font-weight: $thin;
+    letter-spacing: 1.8px;
+  }
+}
+
+/* Your name, E-mail, Phone, Question */
+
+.input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid $black;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 5px 0;
+}
+
+.textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  resize: none;
+  padding: 5px;
+}
+
+/* I agree to the privacy policies */
+
+.check-label {
+  width: 100%;
+  margin-bottom: 25px;
+  @include flexbox;
+  @include justify-content-space-around;
+  color: $black;
+  font-family: $textFont;
+  font-size: 14px;
+  font-weight: $default;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+
+.fakecheck {
+  height: 21px;
+  width: 21px;
+  border: 1px solid $black;
+  margin-right: 11px;
+  position: relative;
+  z-index: 2;
+}
+
+.check {
+  height: 21px;
+  width: 21px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.fakecheck .fa-check {
+  visibility: hidden;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  font-size: 15px;
+}
+
+input[type="checkbox"]:checked + .fa-check {
+  visibility: visible;
+}
+
+/* Send the form */
+
+.submit {
+  color: $blue;
+  font-family: $textFont;
+  font-size: 21px;
+  font-weight: $default;
+  border: 1px solid $blue;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px 25px;
+  // -webkit-transition: all 0.15s ease-in-out;
+  // transition: all 0.15s ease-in-out;
+  @include defaultTransition;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+.notification-alert {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15px 45px;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  position: relative;
+  display: none;
+}
+
+.notification-alert-visible {
+  display: block;
+}
+
+.notification-text {
+  font-family: $textFont;
+  font-weight: $thin;
+  line-height: 26px;
+}
+
+.fas.fa-times.fa-close {
+  font-size: 11px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  background-color: $footerBackColor;
+  padding: 25px;
+}
+
+.footer-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  @include flexbox;
+
+  @include justify-content-space-between;
+  @include align-items-center;
+}
+
+@media screen and (max-width: 1150px) {
+  .reasons-container {
+    @include justify-content-space-around;
+  }
+  .reason-box {
+    @include flex-direction-col;
+    @include align-items-center;
+    @include justify-content-space-around;
+    text-align: center;
+  }
+  .contacts-container {
+    @include flex-direction-col;
+    width: 55%;
+    padding: 35px 18px 35px 18px;
+  }
+  .contacts-info-box {
+    @include flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .contacts-info {
+    margin-right: 30px;
+    margin-bottom: 25px;
+  }
+  .map-container {
+    width: 100%;
+    height: 60%;
+  }
+  .form-container {
+    width: 37%;
+  }
+}
+@import "tablet";
+@import "mobile";

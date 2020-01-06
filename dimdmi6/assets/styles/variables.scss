@@ -1,0 +1,47 @@
+// default title font
+$titlesFont: "AG Book Pro",
+serif;
+// default text font
+$textFont: "Roboto",
+serif;
+$Myriad: 'Myriad Pro',
+serif;
+// max content width
+$maxContentWidth: 1350px;
+$boxWidth: 1256px;
+// Font Weight
+$thin: 100;
+$regular: 400;
+$bold: 700;
+// Colors
+$white: #ffffff;
+$black: #000000;
+$darkBlue: #00054c;
+$blue: #3f4cff;
+$paleBlue: #5b66ff;
+//Mixins
+// background images setup
+@mixin bgImageSet {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+// default page transitions
+@mixin defaultTransition {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+// Slow transitions
+@mixin slowTransition {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+@mixin countStyles {
+    color: $white;
+    font-family: $Myriad;
+    font-size: 114px;
+    font-weight: $bold;
+}

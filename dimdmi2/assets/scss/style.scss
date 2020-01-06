@@ -1,0 +1,776 @@
+// variables
+@import "variables";
+body {
+  font-family: $textFont;
+}
+
+// Mobile bars
+.bars-box {
+  display: none;
+}
+
+/* =================================   Header   ==================================== */
+
+// header
+.page-header {
+  padding: 25px 0;
+  width: 100%;
+  position: fixed;
+  background-color: $white;
+  @include defaultTransition;
+  z-index: 999;
+
+  //
+  .header-wrapper {
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    @include flexbox;
+    @include justify-content-space-between;
+    @include align-items-center;
+
+    // navigation
+    .nav-links-container {
+      @include flexbox;
+      @include justify-content-space-between;
+      @include align-items-center;
+
+      // navigation link
+      .nav-link {
+        @include defaultTransition;
+        color: $blue;
+        font-family: $titlesFont;
+        font-size: 16px;
+        font-weight: $thin;
+        letter-spacing: 2.2px;
+        //   padding: 5px 2px;
+        margin: 0 12px;
+        border-bottom: 1px solid transparent;
+        display: block;
+        &:hover {
+          border-bottom-color: $blue;
+        }
+      }
+    }
+
+    /* dIMdMI TEMPLATES logo*/
+    .logo-container {
+      @include defaultTransition;
+      display: block;
+      position: relative;
+      left: -75px;
+      &:hover {
+        -webkit-filter: brightness(94%);
+        filter: brightness(94%);
+      }
+
+      .logo {
+        color: $blue;
+        font-family: $titlesFont;
+        font-size: 40px;
+        font-weight: $bold;
+
+        .logo-span {
+          font-size: 25px;
+        }
+
+        .logo-span--I {
+          font-size: 32px;
+        }
+      }
+      .logo-name {
+        color: #7f7f7f;
+        font-family: $titlesFont;
+        font-size: 9px;
+        font-weight: $thin;
+        text-transform: uppercase;
+        letter-spacing: 9.4px;
+      }
+    }
+    /*  */
+
+    .call-us-container {
+      // phone number
+      .phone-number.phone-number-desktop,
+      .phone-number.phone-number-tabl {
+        @include defaultTransition;
+        background-color: $blue;
+        color: $white;
+        font-family: $textFont;
+        font-size: 20px;
+        font-weight: $thin;
+        letter-spacing: 2.6px;
+        padding: 10px 15px;
+        display: block;
+        &:hover {
+          -webkit-filter: brightness(94%);
+          filter: brightness(94%);
+        }
+      }
+
+      .phone-number.phone-number-tabl {
+        display: none;
+      }
+    }
+  }
+}
+
+// header scroll
+.header-scrolled {
+  padding: 15px 0;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+/* ======================================   Intro   ========================================== */
+
+// Page Intro
+.page-intro {
+  @include bgImageSet;
+  background-image: url(../images/header-back.png);
+  padding: 327px 0 155px;
+
+  //
+  .intro-text-box {
+    margin: 0 auto;
+    max-width: 841px;
+    text-align: center;
+
+    // intro title
+    .intro-title {
+      max-width: 656px;
+      margin: 0 auto;
+      margin-bottom: 27px;
+      font-family: $titlesFont;
+      font-weight: $regular;
+      color: $white;
+      font-size: 55px;
+      letter-spacing: 5.8px;
+    }
+
+    // intro text
+    .intro-text {
+      display: block;
+      font-family: $textFont;
+      font-weight: $thin;
+      color: $white;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 1.8px;
+    }
+  }
+
+  // Go down link animation
+  @-webkit-keyframes go-down-link-animation {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 25px;
+    }
+  }
+  @keyframes go-down-link-animation {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 25px;
+    }
+  }
+
+  //
+  .go-down-box {
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    // go down link
+    .go-down-link {
+      -webkit-animation: go-down-link-animation 1s ease-in-out 0s infinite alternate;
+      animation: go-down-link-animation 1s ease-in-out 0s infinite alternate;
+      display: block;
+      font-size: 47px;
+      color: $white;
+      position: relative;
+    }
+  }
+}
+
+/* ==========================================   Page main   ======================================== */
+
+.page-main {
+  .main-content {
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    padding: 45px 15px 97px;
+    overflow: hidden;
+
+    // settings for all page titles
+    .title {
+      color: $black;
+      font-family: $titlesFont;
+      font-size: 41px;
+      font-weight: $regular;
+      letter-spacing: 5.8px;
+      display: inline-block;
+      position: relative;
+      margin-bottom: 7px;
+      // title line
+      &::after {
+        content: "";
+        width: 172px;
+        height: 4px;
+        background-color: $blue;
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+      }
+    }
+
+    /* ============================================ About section ===================================== */
+    .about {
+      padding-bottom: 65px;
+    }
+
+    .agency-features-container {
+      margin-top: 55px;
+
+      // feature row
+      .feature-row {
+        @include flexbox;
+        @include justify-content-space-between;
+        @include align-items-center;
+        @include flex-wrap-wrap;
+        margin-bottom: 75px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        // feature box
+        .feature-box {
+          @include flexbox;
+          @include justify-content-space-between;
+          max-width: 30%;
+
+          // feature images
+          .feature-image-box {
+            height: 77px;
+            width: 77px;
+            @include bgImageSet;
+            background-size: contain;
+            margin-right: 20px;
+          }
+
+          /* Feature images */
+          .feature-image-box.feature-security {
+            background-image: url(../images/feature-security.png);
+          }
+          .feature-image-box.feature-time {
+            background-image: url(../images/feature-time.png);
+          }
+          .feature-image-box.feature-team {
+            background-image: url(../images/feature-team.png);
+          }
+          .feature-image-box.feature-quality {
+            background-image: url(../images/feature-quality.png);
+          }
+          .feature-image-box.feature-location {
+            background-image: url(../images/feature-location.png);
+          }
+          .feature-image-box.feature-prices {
+            background-image: url(../images/feature-price.png);
+          }
+          /* */
+
+          .feature-text-box {
+            max-width: 315px;
+            @include flexbox;
+            @include flex-direction-col;
+            @include justify-content-center;
+
+            // feature title
+            .feature-title {
+              color: $black;
+              font-family: $textFont;
+              font-size: 17px;
+              font-weight: $regular;
+              letter-spacing: 2.4px;
+            }
+
+            // feature text
+            .feature-text {
+              color: $black;
+              font-family: $textFont;
+              font-size: 14px;
+              font-weight: $thin;
+              line-height: 22px;
+              letter-spacing: 1.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ======================================= Our team ===================================== */
+  .our-team {
+    padding-bottom: 65px;
+
+    // our team title
+    .our-team-title {
+      // title line
+      &::after {
+        width: 120px;
+      }
+    }
+
+    .team-members-box {
+      margin-top: 34px;
+      @include flexbox;
+      @include justify-content-space-between;
+      @include flex-wrap-wrap;
+
+      .team-member {
+        // member photos settings
+        .team-member-image-box {
+          @include bgImageSet;
+          width: 240px;
+          height: 232px;
+        }
+
+        /* member photos */
+        .team-member-image-box.member1 {
+          background-image: url(../images/tParker.png);
+        }
+        .team-member-image-box.member2 {
+          background-image: url(../images/jButtler.png);
+        }
+        .team-member-image-box.member3 {
+          background-image: url(../images/tThompson.png);
+        }
+        .team-member-image-box.member4 {
+          background-image: url(../images/mJohan.png);
+        }
+        /* */
+
+        .team-member-content {
+          text-align: center;
+
+          // member name
+          .member-name {
+            color: $black;
+            font-family: $titlesFont;
+            font-size: 21px;
+            font-weight: $regular;
+            letter-spacing: 2.9px;
+            line-height: 35px;
+          }
+
+          // member post
+          .member-post {
+            color: $black;
+            font-family: $textFont;
+            font-size: 13px;
+            font-weight: $thin;
+            letter-spacing: 1.6px;
+          }
+        }
+      }
+    }
+  }
+  /* ============================================= Portfolio ===================================== */
+  .portfolio {
+    .portfolio-title {
+      margin-bottom: 40px;
+      &::after {
+        width: 210px;
+      }
+    }
+
+    .portfolio-slide {
+      overflow: hidden;
+      cursor: -webkit-grab;
+      cursor: grab;
+      &:active {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+      }
+      &:hover .portfolio-slide-content {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      .portfolio-slide-image {
+        @include bgImageSet;
+        width: 450px;
+        height: 305px;
+      }
+
+      /* Portfolio slides images  */
+      .portfolio-slide-image.portfolio-slide1 {
+        background-image: url(../images/slide-image-1.png);
+      }
+      .portfolio-slide-image.portfolio-slide2 {
+        background-image: url(../images/slide-image-2.png);
+      }
+      .portfolio-slide-image.portfolio-slide3 {
+        background-image: url(../images/slide-image-3.png);
+      }
+      .portfolio-slide-image.portfolio-slide4 {
+        background-image: url(../images/slide-image-4.png);
+      }
+      .portfolio-slide-image.portfolio-slide5 {
+        background-image: url(../images/slide-image-5.png);
+      }
+      /* */
+      .portfolio-slide-content {
+        height: 100%;
+        width: 100%;
+        padding: 15px 25px;
+        text-align: justify;
+        background-color: #000000a8;
+        -webkit-transform: translate3d(0, 101%, 0);
+        transform: translate3d(0, 101%, 0);
+        @include slowTransition;
+
+        .portfolio-slide-title {
+          color: $white;
+          font-family: $titlesFont;
+          font-size: 28px;
+          font-weight: $regular;
+          letter-spacing: 3.9px;
+          line-height: 50px;
+        }
+
+        .portfolio-slide-text {
+          color: $white;
+          font-family: $textFont;
+          font-size: 13px;
+          font-weight: $thin;
+          line-height: 22px;
+          letter-spacing: 1.8px;
+        }
+      }
+    }
+  }
+
+  /* Slider customizations */
+
+  // sliders navigation dots container settings
+  .portfolio .slick-dots,
+  .rates .slick-dots {
+    @include flexbox;
+    @include justify-content-space-around;
+    @include align-items-center;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  // margin between portfolio slides
+  .portfolio .slick-initialized .slick-slide {
+    margin: 0 35px;
+  }
+
+  // rates navigation dots container maximum width
+  .rates .slick-dots {
+    max-width: 70px;
+  }
+
+  .portfolio .slick-dots li,
+  .rates .slick-dots li {
+    display: block;
+  }
+
+  // navigation dots settings
+  .portfolio .slick-dots > li button,
+  .rates .slick-dots > li button {
+    @include defaultTransition;
+    border: none;
+    font-size: 0px;
+    background-color: $blue;
+    height: 15px;
+    width: 15px;
+    display: block;
+    cursor: pointer;
+  }
+
+  // navigation dots while active
+  .portfolio .slick-dots > .slick-active button,
+  .rates .slick-dots > .slick-active button {
+    height: 18px;
+    width: 18px;
+  }
+
+  .rates .slick-slider .slick-track,
+  .slick-slider .slick-list {
+    padding: 10px 0;
+  }
+
+  .rates .slick-slide {
+    margin: 0 20px;
+  }
+  /* */
+
+  /* =============================================   Rates   =============================================== */
+  .rates {
+    // rates title
+    .rates-title {
+      margin-bottom: 40px;
+      // title line
+      &::after {
+        width: 128px;
+      }
+    }
+
+    // rates slide
+    .rates-slide {
+      -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.38);
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.38);
+      width: 785px;
+      cursor: -webkit-grab;
+      cursor: grab;
+      // while clicked
+      &:active {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+      }
+
+      // rates image setings
+      .rates-slide-image {
+        @include bgImageSet;
+        height: 183px;
+        width: 183px;
+        margin-right: 17px;
+        float: left;
+      }
+
+      /* rates images */
+      .rates-slide-image.rates-image-1 {
+        background-image: url(../images/rates-image-1.png);
+      }
+      .rates-slide-image.rates-image-2 {
+        background-image: url(../images/rates-image-2.png);
+      }
+      .rates-slide-image.rates-image-3 {
+        background-image: url(../images/rates-image-3.png);
+      }
+      /* */
+
+      .rates-slide-content {
+        width: 590px;
+        padding: 8px 15px 8px 0;
+        float: right;
+
+        // rates slide title
+        .rates-slide-title {
+          font-family: $titlesFont;
+          font-size: 23px;
+          font-weight: $regular;
+          line-height: 34px;
+          color: $black;
+          letter-spacing: 3.2px;
+        }
+        .rates-slide-title-span {
+          color: $blue;
+        }
+
+        // rates slide text
+        .rates-slide-text {
+          color: $black;
+          font-family: $textFont;
+          font-size: 12px;
+          font-weight: $thin;
+          line-height: 22px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+/* ========================================   Footer   ========================================= */
+.footer {
+  background-color: $footerBackColor;
+  padding-top: 50px;
+  padding-bottom: 45px;
+
+  .footer-content {
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    @include flexbox;
+    @include justify-content-space-between;
+    padding: 0 15px;
+
+    .footer-contact-box {
+      @include flexbox;
+
+      .footer-nav-list .footer-nav-list-item .footer-nav-link,
+      .socials-list .socials-list-item .social-link,
+      .footer-info-list .footer-info-list-item {
+        margin-bottom: 20px;
+        color: $black;
+        font-family: $titlesFont;
+        font-size: 15px;
+        font-weight: $regular;
+        letter-spacing: 2.2px;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .footer-info-list .footer-info-list-item {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .footer-nav-list-item,
+      .social-link,
+      .footer-info-list-item {
+        display: block;
+      }
+
+      .footer-navigation,
+      .socials {
+        margin-right: 75px;
+      }
+    }
+
+    .form-container {
+      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.38);
+      max-width: 486px;
+      min-width: 290px;
+      background-color: $white;
+      text-align: center;
+      padding: 22px 14px;
+
+      .form-title {
+        font-family: $titlesFont;
+        font-size: 19px;
+        font-weight: $regular;
+      }
+
+      .form-subtitle {
+        font-family: $textFont;
+        font-size: 14px;
+        font-weight: $thin;
+        display: block;
+        margin-bottom: 15px;
+      }
+
+      .form {
+        .input {
+          width: 85%;
+          border: none;
+          background-color: transparent;
+          border-bottom: 1px solid $black;
+          padding: 5px 2px;
+          font-size: 13px;
+          margin-bottom: 20px;
+          &::placeholder {
+            font-family: $textFont;
+            font-weight: $thin;
+            font-size: 12px;
+          }
+        }
+
+        .policies {
+          @include flexbox;
+          font-family: $textFont;
+          font-weight: $thin;
+          font-size: 12px;
+          max-width: 68%;
+          margin: 0 auto;
+          margin-bottom: 13px;
+        }
+
+        .fakecheck {
+          height: 14px;
+          width: 14px;
+          border: 1px solid $black;
+          margin-right: 10px;
+          position: relative;
+          z-index: 1;
+          .fas.fa-check {
+            visibility: hidden;
+            font-size: 10px;
+          }
+        }
+
+        .privacy {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 14px;
+          width: 14px;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 5;
+          &:checked + .fas.fa-check {
+            visibility: visible;
+          }
+        }
+
+        .submit {
+          border: none;
+          background: $blue;
+          cursor: pointer;
+          color: $white;
+          font-family: $textFont;
+          font-weight: $thin;
+          padding: 10px 25px;
+          @include defaultTransition;
+          &:hover {
+            filter: brightness(93%);
+          }
+        }
+      }
+
+      .notification-alert {
+        display: none;
+        font-family: $textFont;
+        font-weight: $thin;
+        padding: 10px 20px;
+        margin: 0 auto;
+        margin-top: 15px;
+        box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.38);
+        position: relative;
+        font-size: 13px;
+        width: 75%;
+        .fa-close {
+          position: absolute;
+          top: 1px;
+          font-size: 10px;
+          right: 2px;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          padding: 0;
+        }
+      }
+
+      .notification-alert-visible {
+        display: block;
+      }
+    }
+  }
+  .footer-line {
+    height: 1px;
+    width: 60%;
+    margin: 60px auto;
+    background-color: $black;
+  }
+
+  .copyright {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-family: $textFont;
+    font-weight: $thin;
+    color: $black;
+  }
+}
+
+@import "tablet";
+@import "mobile";
+

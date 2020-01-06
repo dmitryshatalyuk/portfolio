@@ -1,0 +1,1454 @@
+@charset "UTF-8";
+/* About, Why we are chosen, Services, Portfolio, Rates, Contacts */
+/* line 4, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+body {
+  font-family: "Roboto", serif;
+}
+
+/* line 7, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.title {
+  font-family: "AG Book Pro", serif;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 5.8px;
+  margin-bottom: 22px;
+  color: #000000;
+}
+
+/* Header */
+/* line 13, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+}
+
+/* line 24, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.scrolled {
+  padding: 15px 0;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 30, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 10px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* dIMdMI TEMPLATES*/
+/* line 41, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.logo {
+  color: #2193ff;
+  font-family: "AG Book Pro", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* line 48, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.logo-span {
+  font-size: 25px;
+}
+
+/* line 52, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.logo-span--I {
+  font-size: 32px;
+}
+
+/* line 56, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.logo-name {
+  color: #7f7f7f;
+  font-family: "AG Book Pro", serif;
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 9.4px;
+}
+
+/*  */
+/* line 67, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.bars-box {
+  display: none;
+}
+
+/* Navigation */
+/* line 73, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.nav-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 77, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.nav-links-box {
+  margin-right: 15px;
+}
+
+/* line 79, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.nav-links-box:last-child {
+  margin-right: 0;
+}
+
+/* #about, #services, #portfolio, #rates, #contacts */
+/* line 86, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.nav-link {
+  color: #2193ff;
+  font-family: "AG Book Pro", serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  padding: 10px 12px;
+  display: block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 97, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.nav-link:hover {
+  background-color: #2193ff;
+  color: #ffffff;
+}
+
+/* Intro */
+/* line 105, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro {
+  padding-top: 222px;
+  padding-bottom: 222px;
+  background-image: url(../images/header-back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 113, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-container {
+  max-width: 900px;
+  padding: 25px 41px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #00000075;
+  margin-bottom: 44px;
+}
+
+/* Upgrade your business with dIMdMI templates */
+/* line 124, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-title {
+  max-width: 863px;
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* Increase your sell level with this wonde... */
+/* line 137, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-text {
+  max-width: 780px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 120%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 148, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-goDown-link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+/* click it and go down */
+/* line 155, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-goDown-link {
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 2.8px;
+  /* text-transform: uppercase; */
+  background-color: #2193ff;
+  padding: 15px 30px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 171, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.intro-goDown-link:hover {
+  -webkit-filter: brightness(93%);
+  filter: brightness(93%);
+}
+
+/* Main */
+/* line 179, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.main {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* About section */
+/* line 187, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about {
+  padding: 45px 0 55px;
+}
+
+/* line 191, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 199, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-left-box {
+  max-width: 50%;
+}
+
+/* Creating projects in th... */
+/* line 205, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-text {
+  word-break: normal;
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 120%;
+  letter-spacing: 1.8px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+/* line 217, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.more-button,
+.hide-button {
+  display: none;
+}
+
+/* line 222, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-text:last-child {
+  margin-bottom: 0;
+}
+
+/* line 226, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-right-box {
+  width: 45%;
+}
+
+/* line 230, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-right-box--image-big {
+  width: 100%;
+  height: 366px;
+  -webkit-box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  background-image: url(../images/about-image-big.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 242, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.about-right-box--image-small {
+  height: 70%;
+  width: 70%;
+  -webkit-box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 32px 2px rgba(0, 0, 0, 0.38);
+  background-image: url(../images/about-image-little.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  z-index: 3;
+}
+
+/* Why we are chosen section */
+/* line 259, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.why-we-are-chosen {
+  padding-bottom: 55px;
+}
+
+/* line 263, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reasons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 270, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reason-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 274, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reason-circle-image-border {
+  padding: 10px;
+  border: 1px dashed #2193ff;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* line 281, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reason-circle-image {
+  height: 150px;
+  width: 150px;
+  background-color: #2193ff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+
+/* line 291, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.wwac-experts {
+  background-image: url(../images/wwac-team.png);
+}
+
+/* line 295, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.wwac-result {
+  background-image: url(../images/wwac-result.png);
+}
+
+/* line 299, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.wwac-quality {
+  background-image: url(../images/wwac-quality.png);
+}
+
+/* line 303, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reasons-text-box {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+/* Best experts, Fast result, Great quality */
+/* line 310, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reason-title {
+  color: #000000;
+  font-family: "AG Book Pro", serif;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 55px;
+}
+
+/* Only best exper.. */
+/* line 320, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.reason-text {
+  width: 198px;
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* Services section */
+/* line 331, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.service {
+  padding-bottom: 50px;
+}
+
+/* line 335, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.services-title {
+  margin-bottom: 0;
+}
+
+/* line 339, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.services-title-text {
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+}
+
+/* line 347, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plans-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 354, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plan-box {
+  margin-top: 30px;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  width: 325px;
+  word-break: break-all;
+}
+
+/* Basic, Medium, Seller’s Dream */
+/* line 364, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plan-title {
+  background-color: #2193ff;
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 3.9px;
+  text-align: center;
+}
+
+/* line 375, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.medium {
+  background-color: #166ec1;
+}
+
+/* line 379, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.dream {
+  background-color: #123eba;
+}
+
+/* line 383, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plan-benefits {
+  padding: 15px 40px;
+}
+
+/* line 387, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plan-medium .benefit {
+  color: #166ec1;
+}
+
+/* line 391, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.plan-dream .benefit {
+  color: #123eba;
+}
+
+/* Analyse the prob... */
+/* line 397, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.benefit {
+  color: #2193ff;
+  font-family: "Roboto", serif;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+/* line 403, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.benefit .fa-check {
+  font-size: 19px;
+}
+
+/* line 408, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+
+/* $200 order, $400 order, $800 order */
+/* line 416, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button {
+  display: block;
+  /* Style for "200" */
+  color: #2193ff;
+  font-family: "AG Book Pro", serif;
+  font-size: 34px;
+  font-weight: 400;
+  border: 1px solid #2193ff;
+  padding: 10px 25px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 429, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button:before {
+  content: "$";
+  font-size: 23px;
+  position: absolute;
+  top: 9px;
+  left: 13px;
+}
+
+/* line 436, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button:hover {
+  background-color: #2193ff;
+  color: #ffffff;
+}
+
+/* line 442, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-medium {
+  color: #166ec1;
+  border-color: #166ec1;
+}
+
+/* line 445, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-medium:hover {
+  background-color: #166ec1;
+}
+
+/* line 450, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-dream {
+  color: #123eba;
+  border-color: #123eba;
+}
+
+/* line 453, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-dream:hover {
+  background-color: #123eba;
+}
+
+/* line 458, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.order-button-span {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+}
+
+/* Portfolio section */
+/* line 465, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio {
+  padding-bottom: 50px;
+}
+
+/* line 469, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide {
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: #ffffff;
+  margin-right: 50px;
+}
+
+/* line 476, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* line 480, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide:last-child {
+  margin-right: 0;
+}
+
+/* line 485, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image {
+  background-image: url(../images/slide-image-1.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 420px;
+  height: 283px;
+}
+
+/* line 494, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image-1 {
+  background-image: url(../images/slide-image-1.png);
+}
+
+/* line 498, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image-2 {
+  background-image: url(../images/slide-image-2.png);
+}
+
+/* line 502, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image-3 {
+  background-image: url(../images/slide-image-3.png);
+}
+
+/* line 506, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image-4 {
+  background-image: url(../images/slide-image-4.png);
+}
+
+/* line 510, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-image-5 {
+  background-image: url(../images/slide-image-5.png);
+}
+
+/* line 514, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-content {
+  width: 420px;
+  padding: 10px 25px;
+}
+
+/* An exciting village,... */
+/* line 521, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-content--title {
+  color: #000000;
+  font-family: "AG Book Pro", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 67px;
+  letter-spacing: 3.9px;
+  text-align: center;
+}
+
+/* line 531, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slide-content--text {
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  display: block;
+}
+
+/* Slider plugin customization */
+/* line 542, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.slick-list {
+  padding: 30px 0px 20px 13px;
+  margin-left: -13px;
+}
+
+/* line 547, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.portfolio-slider .slick-slide {
+  margin: 0 13px;
+}
+
+/* line 551, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.controls-positioning,
+.rates-controls-positioning {
+  padding-top: 15px;
+  max-width: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* line 563, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.controls-positioning .prev,
+.controls-positioning .next {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* line 574, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates-controls-positioning .prev,
+.rates-controls-positioning .next {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+/* Rates section */
+/* line 586, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates {
+  padding-bottom: 50px;
+}
+
+/* line 590, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates-slide {
+  cursor: -webkit-grab;
+  cursor: grab;
+  word-break: break-all;
+  width: 265px !important;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  padding: 25px 19px 15px;
+  margin-right: 50px;
+  line-height: 20px;
+}
+
+/* line 600, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates-slide:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* Ben Simmons */
+/* line 608, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates-slide--title {
+  color: #000000;
+  font-family: "AG Book Pro", serif;
+  font-size: 22px;
+  font-weight: 400;
+  display: block;
+}
+
+/* line 616, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.rates-slide--text {
+  font-size: 14px;
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  display: block;
+}
+
+/* line 624, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.stars-box {
+  margin: 7px 0 5px;
+}
+
+/* line 628, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.fa-star {
+  color: #2193ff;
+}
+
+/* Contacts section */
+/* line 634, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts {
+  padding-bottom: 50px;
+}
+
+/* line 638, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 65%;
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: #ffffff;
+  padding: 35px 35px 35px 18px;
+}
+
+/* line 649, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-info {
+  margin-bottom: 15px;
+}
+
+/* line 653, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-info-box {
+  margin-right: 25px;
+}
+
+/* Adress, E-mail, Instagram, Twitter, Facebook */
+/* line 659, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-info-title {
+  font-size: 22px;
+  color: #000000;
+  font-family: "AG Book Pro", serif;
+  font-weight: 400;
+}
+
+/* line 666, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-text {
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 673, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.map-container {
+  width: 60%;
+}
+
+/* line 677, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.map-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 682, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contacts-container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 690, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.form-container {
+  -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  background-color: #ffffff;
+  padding: 25px 35px;
+  width: 30%;
+}
+
+/* Still have questions? */
+/* line 700, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.form-title {
+  text-align: center;
+  font-family: "AG Book Pro", serif;
+  font-weight: 400;
+  font-style: 22px;
+}
+
+/* Leave your contacts and we will call you */
+/* line 709, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.form-text {
+  text-align: center;
+  font-family: "AG Book Pro", serif;
+  font-weight: 400;
+  font-style: 17px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+/* line 718, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* line 724, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.contact-form ::-webkit-input-placeholder,
+.contact-form :-ms-input-placeholder,
+.contact-form ::-ms-input-placeholder,
+.contact-form ::placeholder {
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+}
+
+/* Your name, E-mail, Phone, Question */
+/* line 738, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 5px 0;
+}
+
+/* line 747, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.textarea {
+  width: 100%;
+  margin-bottom: 25px;
+  resize: none;
+  padding: 5px;
+}
+
+/* I agree to the privacy policies */
+/* line 756, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.check-label {
+  width: 100%;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+
+/* line 769, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.fakecheck {
+  height: 21px;
+  width: 21px;
+  border: 1px solid #000000;
+  margin-right: 11px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 778, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.check {
+  height: 21px;
+  width: 21px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+/* line 789, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.fakecheck .fa-check {
+  visibility: hidden;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  font-size: 15px;
+}
+
+/* line 797, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+input[type="checkbox"]:checked + .fa-check {
+  visibility: visible;
+}
+
+/* Send the form */
+/* line 803, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.submit {
+  color: #2193ff;
+  font-family: "Roboto", serif;
+  font-size: 21px;
+  font-weight: 400;
+  border: 1px solid #2193ff;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 15px 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 815, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.submit:hover {
+  background-color: #2193ff;
+  color: #ffffff;
+}
+
+/* line 821, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.notification-alert {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15px 45px;
+  box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.38);
+  position: relative;
+  display: none;
+}
+
+/* line 831, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.notification-alert-visible {
+  display: block;
+}
+
+/* line 835, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.notification-text {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/* line 841, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.fas.fa-times.fa-close {
+  font-size: 11px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  cursor: pointer;
+}
+
+/* Footer */
+/* line 851, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.footer {
+  background-color: #ededed;
+  padding: 25px;
+}
+
+/* line 856, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+.footer-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1150px) {
+  /* line 866, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .reasons-container {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /* line 869, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .reason-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
+  }
+  /* line 875, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .contacts-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 55%;
+    padding: 35px 18px 35px 18px;
+  }
+  /* line 880, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .contacts-info-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  /* line 886, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .contacts-info {
+    margin-right: 30px;
+    margin-bottom: 25px;
+  }
+  /* line 890, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .map-container {
+    width: 100%;
+    height: 60%;
+  }
+  /* line 894, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/style.scss */
+  .form-container {
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  /* line 2, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .header {
+    padding: 15px 0;
+    position: fixed;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  }
+  /* line 8, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .header-wrapper {
+    max-width: 95%;
+  }
+  /* line 11, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .navigation {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 0;
+  }
+  /* line 22, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .nav-shown {
+    visibility: visible;
+    opacity: 1;
+    top: 85px;
+    -webkit-box-shadow: 0 15px 8px -2px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 15px 8px -2px rgba(0, 0, 0, 0.22);
+  }
+  /* line 29, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .nav-links-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  /* line 33, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bars-box {
+    display: block;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 25px;
+    width: 39px;
+    padding: 0;
+  }
+  /* line 42, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bar {
+    width: 38px;
+    height: 6px;
+    background-color: #2193ff;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  /* line 53, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .footer-bar {
+    background-color: #ffffff;
+  }
+  /* line 56, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bar1 {
+    top: 0;
+  }
+  /* line 59, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bar3 {
+    top: 100%;
+  }
+  /* line 62, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bar1-clicked {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 50%;
+  }
+  /* line 67, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .bar2-clicked {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  /* line 72, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .nav-links-box {
+    margin: 0;
+    width: 95%;
+  }
+  /* line 76, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .nav-link {
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 81, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .intro-container {
+    max-width: 85%;
+  }
+  /* line 84, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .intro-title {
+    font-size: 38px;
+  }
+  /* line 87, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .intro-text {
+    font-size: 16px;
+  }
+  /* line 90, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .main {
+    padding: 0 20px;
+  }
+  /* line 93, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 99, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .about-left-box {
+    max-width: 100%;
+  }
+  /* line 102, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .about-right-box {
+    width: 100%;
+    padding: 0px;
+    margin: 50px 0;
+  }
+  /* line 107, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .about-right-box--image-big {
+    height: 479px;
+  }
+  /* line 110, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .contacts-container-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 116, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .contacts-container {
+    width: 100%;
+  }
+  /* line 119, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .contacts-info-box {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  /* line 124, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .contacts-info-title {
+    color: #000000;
+    font-family: "AG Book Pro";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  /* line 131, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .contacts-text {
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+  }
+  /* line 138, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .form-container {
+    width: 85%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 25px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 148, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .reason-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  /* line 155, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .reason-circle-image {
+    height: 180px;
+    width: 180px;
+  }
+  /* line 159, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .reason-title {
+    font-size: 39px;
+  }
+  /* line 162, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .reason-text {
+    font-size: 18px;
+    width: 278px;
+  }
+  /* line 166, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .plan-box {
+    width: 480px;
+    margin-top: 60px;
+  }
+  /* line 170, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .plan-title {
+    font-size: 39px;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+  /* line 175, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .benefit {
+    font-size: 30px;
+    line-height: 67px;
+  }
+  /* line 179, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/tablet.scss */
+  .order-button {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  /* line 2, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .intro {
+    padding-bottom: 152px;
+  }
+  /* line 5, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .intro-title {
+    font-size: 23px;
+  }
+  /* line 8, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .intro-text {
+    font-size: 15px;
+  }
+  /* line 11, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .intro-goDown-link {
+    font-size: 22px;
+  }
+  /* line 14, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .more-button {
+    display: inline-block;
+    font-style: italic;
+    font-weight: 700;
+  }
+  /* line 19, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .reason-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 22, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .hidden-text {
+    display: none;
+  }
+  /* line 25, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .visible-text {
+    display: block;
+  }
+  /* line 28, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .about-text {
+    margin-bottom: 0;
+  }
+  /* line 31, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .margin-added {
+    margin-bottom: 30px;
+  }
+  /* line 34, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .more-button-hidden {
+    visibility: hidden;
+  }
+  /* line 37, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .hide-button {
+    display: inline-block;
+    font-style: italic;
+    font-weight: 700;
+  }
+  /* line 42, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .about-right-box--image-big {
+    height: 296px;
+  }
+  /* line 45, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .reason-title {
+    font-size: 28px;
+  }
+  /* line 48, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .reason-text {
+    font-size: 15px;
+  }
+  /* line 51, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .title {
+    font-size: 34px;
+  }
+  /* line 54, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .plan-box {
+    max-width: 444px;
+    word-break: keep-all;
+  }
+  /* line 58, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .plan-title {
+    font-size: 28px;
+  }
+  /* line 61, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .benefit {
+    font-size: 23px;
+    line-height: 50px;
+  }
+  /* line 65, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .order-button {
+    font-size: 34px;
+  }
+  /* line 68, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slide {
+    margin: 0;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+  /* line 73, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slide-content {
+    word-break: keep-all;
+  }
+  /* line 76, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slider .slick-slide {
+    margin: 0;
+  }
+  /* line 79, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slider .slick-list {
+    padding: 0;
+  }
+  /* line 82, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slider .slick-list {
+    padding: 0;
+    zoom: 0.7;
+  }
+  /* line 86, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .portfolio-slide {
+    margin: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  /* line 94, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .about-right-box--image-big {
+    height: 186px;
+  }
+  /* line 97, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .intro-goDown-link {
+    font-size: 16px;
+  }
+  /* line 100, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .about-right-box--image-small {
+    bottom: -35px;
+  }
+  /* line 103, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .benefit {
+    font-size: 18px;
+    line-height: 42px;
+  }
+  /* line 107, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .contacts-info-title {
+    font-size: 23px;
+  }
+  /* line 110, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .contacts-container {
+    padding: 35px 18px 35px 18px;
+  }
+  /* line 113, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .contacts-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  /* line 117, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .contacts-text {
+    font-size: 12px;
+  }
+  /* line 120, C:/Users/Dmitry/Desktop/dlmdml scss/assets/scss/mobile.scss */
+  .check-label {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

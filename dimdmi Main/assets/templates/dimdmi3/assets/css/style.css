@@ -1,0 +1,1279 @@
+/* display flex settings */
+/* */
+/* line 3, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+body {
+  font-family: "Roboto", serif;
+}
+
+/* Keyframes */
+@-webkit-keyframes dot1Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+@keyframes dot1Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 25px;
+  }
+}
+
+@-webkit-keyframes dot2Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 39px;
+  }
+}
+
+@keyframes dot2Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 39px;
+  }
+}
+
+@-webkit-keyframes dot3Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 53px;
+  }
+}
+
+@keyframes dot3Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 53px;
+  }
+}
+
+/* */
+/* Header */
+/* line 58, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/intro-back.png);
+  overflow-x: hidden;
+}
+
+/* line 63, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  /* Logo */
+  /*  */
+}
+
+/* line 72, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .logo-container {
+  display: block;
+}
+
+/* line 75, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .logo-container .logo {
+  color: #1b91ff;
+  font-family: "AG Book Pro", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* line 81, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .logo-container .logo .logo-span {
+  font-size: 25px;
+}
+
+/* line 85, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .logo-container .logo .logo-span--I {
+  font-size: 32px;
+}
+
+/* line 90, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .logo-container .logo-name {
+  color: #7f7f7f;
+  font-family: "AG Book Pro", serif;
+  font-size: 9px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 9.4px;
+}
+
+/* line 100, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .bars-box {
+  display: none;
+}
+
+/* line 104, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 109, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item {
+  margin: 0 10px;
+}
+
+/* line 111, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 115, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link {
+  display: block;
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  position: relative;
+}
+
+/* line 124, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link:after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 10px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+}
+
+/* line 135, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link:hover::after {
+  width: 100%;
+}
+
+/* line 139, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link.question {
+  padding: 10px 25px;
+  background-color: #1b91ff;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 144, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link.question::after {
+  display: none;
+}
+
+/* line 147, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link.question:hover {
+  -webkit-filter: brightness(93%);
+  filter: brightness(93%);
+}
+
+/* line 156, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro {
+  padding: 225px 0;
+}
+
+/* line 159, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* line 163, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .intro-text-container {
+  max-width: 870px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 168, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .intro-text-container .intro-title {
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+/* line 176, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .intro-text-container .intro-subtitle {
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 37px;
+  letter-spacing: 3.7px;
+}
+
+/* line 185, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .intro-text-container .intro-text {
+  display: block;
+  margin-top: 30px;
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 1.8px;
+}
+
+/* line 197, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .go-down-link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+/* line 202, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .go-down-link-container .go-down-link {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 206, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .go-down-link-container .go-down-link .dot {
+  -webkit-animation: dot3Animation 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s infinite alternate;
+  animation: dot3Animation 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s infinite alternate;
+  position: relative;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* line 216, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .go-down-link-container .go-down-link .dot.dot1 {
+  -webkit-animation-name: dot1Animation;
+  animation-name: dot1Animation;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* line 222, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.header .intro .intro-content .go-down-link-container .go-down-link .dot.dot2 {
+  -webkit-animation-name: dot2Animation;
+  animation-name: dot2Animation;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* */
+/* line 235, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.title {
+  text-align: center;
+  font-family: "AG Book Pro", serif;
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.9px;
+}
+
+/* Main */
+/* line 246, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen {
+  background-color: #1b91ff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* line 251, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content {
+  max-width: 1350px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* line 256, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .wwac-title {
+  color: #ffffff;
+}
+
+/* line 260, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container {
+  margin-top: 55px;
+}
+
+/* line 264, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+}
+
+/* line 270, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row:last-child {
+  margin-bottom: 0;
+}
+
+/* line 275, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 30%;
+}
+
+/* line 281, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-image-box {
+  height: 77px;
+  width: 77px;
+  margin-right: 20px;
+}
+
+/* line 286, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-image-box .svg {
+  height: 77px;
+  width: 77px;
+  fill: #ffffff;
+}
+
+/* line 293, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-text-box {
+  max-width: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 300, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-text-box .feature-title {
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+}
+
+/* line 309, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-text-box .feature-text {
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 1.8px;
+}
+
+/* line 324, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work {
+  padding: 57px 0 61px;
+  overflow-x: hidden;
+}
+
+/* line 328, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* line 333, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .hww-title {
+  color: #1b91ff;
+}
+
+/* line 337, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 342, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 346, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .arrow-positioning {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 352, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .arrow-positioning .arrow {
+  position: absolute;
+  height: 75px;
+  top: 90px;
+  right: -72px;
+}
+
+/* line 360, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle {
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 200px;
+  height: 200px;
+  background-color: #1b91ff;
+  border: 29px solid #92caff;
+  border-radius: 50%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: auto;
+}
+
+/* line 373, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle.s1 {
+  background-image: url(../images/pay.png);
+}
+
+/* line 377, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle.s2 {
+  background-image: url(../images/doc.png);
+}
+
+/* line 381, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle.s3 {
+  background-image: url(../images/proc.png);
+}
+
+/* line 385, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle.s4 {
+  background-image: url(../images/finish.png);
+}
+
+/* line 392, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-circle.s1 .arrow, .main .how-we-work .hww-content .steps-container .step .step-circle.s2 .arrow, .main .how-we-work .hww-content .steps-container .step .step-circle.s3 .arrow {
+  height: 50px;
+  position: absolute;
+  bottom: 75px;
+  right: -90px;
+}
+
+/* line 401, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-text-container {
+  max-width: 255px;
+  margin-top: 33px;
+}
+
+/* line 405, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-text-container .step-title {
+  color: #000000;
+  font-family: "AGBookProMedCnd", serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+}
+
+/* line 413, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .how-we-work .hww-content .steps-container .step .step-text-container .step-text {
+  display: block;
+  margin-top: 5px;
+  color: #000000;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+}
+
+/* line 428, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer {
+  padding-bottom: 65px;
+  overflow-x: hidden;
+}
+
+/* line 432, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* line 437, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .wdwo-title {
+  color: #1b91ff;
+  margin-bottom: 60px;
+}
+
+/* line 442, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 1px solid #b6b6b6;
+}
+
+/* line 447, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box {
+  padding: 40px 20px;
+  text-align: center;
+  border-right: 1px solid #b6b6b6;
+  width: 25%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 453, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:last-child {
+  border-right: none;
+}
+
+/* line 456, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover, .main .what-do-we-offer .wdwo-content .plans-container .plan-box:active {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+  border-right: none;
+  background-color: #1b91ff;
+  border-radius: 10px;
+}
+
+/* line 463, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover .plan-image,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover .plan-name,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover .plan-price,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover .plan-description,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:hover .dpm, .main .what-do-we-offer .wdwo-content .plans-container .plan-box:active .plan-image,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:active .plan-name,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:active .plan-price,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:active .plan-description,
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box:active .dpm {
+  color: #ffffff;
+}
+
+/* line 472, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box .plan-image {
+  color: #b6b6b6;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+/* line 478, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box .plan-name {
+  color: #242424;
+  font-family: "AG Book Pro", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+/* line 487, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box .plan-price {
+  margin: 50px 0 0;
+  color: #242424;
+  font-family: "AG Book Pro", serif;
+  font-size: 84px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.4px;
+  text-align: center;
+}
+
+/* line 497, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-box .dpm {
+  display: block;
+  margin: 0 0 50px;
+  color: #242424;
+  font-family: "AG Book Pro", serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* line 508, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .plan-description {
+  color: #242424;
+  font-family: "AG Book Pro", serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 517, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .order-plan {
+  display: inline-block;
+  margin-top: 30px;
+  color: #000000;
+  font-family: "AG Book Pro", serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+  padding: 10px 55px;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 531, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .what-do-we-offer .wdwo-content .plans-container .order-plan:hover {
+  -webkit-filter: brightness(93%);
+  filter: brightness(93%);
+}
+
+/* line 540, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks {
+  padding: 36px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../images/slider-back.png);
+}
+
+/* line 545, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* line 550, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-title {
+  color: #ffffff;
+}
+
+/* line 554, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider {
+  margin-top: 33px;
+}
+
+/* line 558, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .slide-text {
+  display: block;
+  max-width: 1015px;
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 27px;
+  /* Text style for "Lorem ipsu" */
+  letter-spacing: 1.8px;
+}
+
+/* line 570, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 575, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box {
+  margin-left: 28px;
+}
+
+/* line 578, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-name {
+  /* Style for "Andrew Wig" */
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 2.3px;
+}
+
+/* line 587, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-company {
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* line 600, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 150px;
+  margin-top: 33px;
+}
+
+/* line 607, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-controls .prev,
+.main .feedbacks .feedbacks-container .feedback-controls .next {
+  border: none;
+  background-color: transparent;
+}
+
+/* line 612, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-controls .prev .img-control,
+.main .feedbacks .feedbacks-container .feedback-controls .next .img-control {
+  height: 37px;
+  width: 37px;
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+/* line 619, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.main .feedbacks .feedbacks-container .feedback-controls .pagingInfo {
+  color: #ffffff;
+  font-family: "Roboto", serif;
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+/* */
+/* line 633, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer {
+  background-color: #2d2727;
+  padding: 54px 0;
+}
+
+/* line 637, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content {
+  padding: 0 15px;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 646, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-navigation .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 648, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+  margin: 0 15px;
+}
+
+/* line 650, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-navigation .navigation-list .nav-list-item:first-child {
+  margin-left: 0;
+}
+
+/* line 653, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-navigation .navigation-list .nav-list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 656, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+  color: #ffffff;
+  font-family: "AG Book Pro", serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+/* line 667, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 669, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+.footer .footer-content .footer-socials .social-link {
+  display: block;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1100px) {
+  /* line 680, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-circle {
+    width: 150px;
+    height: 150px;
+    border: 21px solid #92caff;
+  }
+  /* line 687, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-circle.s1::after, .main .how-we-work .hww-content .steps-container .step .step-circle.s2::after, .main .how-we-work .hww-content .steps-container .step .step-circle.s3::after {
+    right: -80px;
+    top: 40px;
+  }
+  /* line 694, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box .plan-price {
+    letter-spacing: 0.4px;
+    font-size: 75px;
+  }
+  /* line 699, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-description {
+    font-size: 12px;
+    width: 80%;
+  }
+  /* line 704, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/style.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .order-plan {
+    padding: 10px 35px;
+  }
+}
+
+/* display flex settings */
+/* */
+@media screen and (max-width: 851px) {
+  /* line 4, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper {
+    position: relative;
+  }
+  /* line 7, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation {
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 95px;
+    left: 0;
+  }
+  /* line 13, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 16, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item {
+    -webkit-transform: translate3d(110%, 0, 0);
+    transform: translate3d(110%, 0, 0);
+    width: 80%;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  /* line 24, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item.nav-list-item-shown {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  /* line 28, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(2) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
+  /* line 32, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  /* line 36, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(4) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  /* line 40, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item:nth-child(5) {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
+  /* line 45, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 18px;
+  }
+  /* line 47, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link::after {
+    display: none;
+  }
+  /* line 50, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .navigation .navigation-list .nav-list-item .nav-link.question {
+    display: inline-block;
+  }
+  /* line 58, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box {
+    display: block;
+    width: 32px;
+    height: 22px;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  /* line 67, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar {
+    width: 32px;
+    height: 4px;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 2px;
+    position: absolute;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  /* line 75, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar1 {
+    top: 0;
+  }
+  /* line 77, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar1.bar1-clicked {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 9px;
+  }
+  /* line 83, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar2 {
+    top: 9px;
+  }
+  /* line 85, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar2.bar2-clicked {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  /* line 90, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar3 {
+    top: 18px;
+  }
+  /* line 92, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .header-wrapper .bars-box .bar.bar3.bar1-clicked {
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 9px;
+  }
+  /* line 102, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content {
+    max-width: 90%;
+  }
+  /* line 104, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container {
+    max-width: 100%;
+  }
+  /* line 106, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-title {
+    font-size: 37px;
+  }
+  /* line 109, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-subtitle {
+    font-size: 30px;
+  }
+  /* line 112, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro .intro-content .intro-text-container .intro-text {
+    font-size: 16px;
+  }
+  /* line 120, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  /* line 124, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+  }
+  /* line 128, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box {
+    max-width: 90%;
+    margin-bottom: 60px;
+  }
+  /* line 134, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work {
+    padding: 57px 0 0;
+  }
+  /* line 137, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 140, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step {
+    margin-bottom: 70px;
+  }
+  /* line 143, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-circle {
+    height: 200px;
+    width: 200px;
+    border: 29px solid #92caff;
+  }
+  /* line 148, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .how-we-work .hww-content .steps-container .step .step-title {
+    letter-spacing: 2.3px;
+    font-size: 22px;
+  }
+  /* line 156, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  /* line 159, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box {
+    width: 50%;
+    border: none;
+  }
+  /* line 162, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border-right: 1px solid #b6b6b6;
+  }
+  /* line 166, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(2) {
+    border-bottom: 1px solid #b6b6b6;
+  }
+  /* line 172, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container {
+    padding: 0 50px;
+  }
+  /* line 178, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 180, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation {
+    margin-bottom: 25px;
+  }
+  /* line 182, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 18px;
+  }
+  /* line 186, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-socials .social-link {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 194, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header {
+    background-image: url(../images/tablet-header-back.png);
+    position: relative;
+    z-index: 10;
+  }
+  /* line 199, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .header .intro {
+    padding: 234px 0;
+  }
+  /* line 203, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main {
+    position: relative;
+    z-index: 2;
+    top: -35px;
+    margin-bottom: -35px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  /* line 212, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container {
+    padding: 0 20px;
+  }
+  /* line 215, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .slide-text {
+    max-width: 96%;
+  }
+  /* line 219, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/tablet.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* display flex settings */
+/* */
+@media screen and (max-width: 486px) {
+  /* line 4, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen {
+    padding-bottom: 0;
+  }
+  /* line 6, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 9, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box {
+    max-width: 100%;
+  }
+  /* line 12, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box.right {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  /* line 21, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box.right .feature-image-box {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  /* line 27, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-text-box .feature-text {
+    font-size: 13px;
+  }
+  /* line 35, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content {
+    padding: 0 25px;
+  }
+  /* line 39, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box {
+    width: 100%;
+  }
+  /* line 41, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border: none;
+  }
+  /* line 45, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(2), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border-bottom: 1px solid #b6b6b6;
+  }
+  /* line 56, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 12px;
+  }
+  /* line 60, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-socials .social-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  /* line 67, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro {
+    padding: 165px 0;
+  }
+  /* line 71, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-title {
+    font-size: 30px;
+  }
+  /* line 74, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-subtitle {
+    font-size: 20px;
+  }
+  /* line 77, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-text {
+    font-size: 13px;
+  }
+  /* line 84, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .slide-text {
+    font-size: 12px;
+  }
+  /* line 90, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-name {
+    font-size: 20px;
+  }
+  /* line 97, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 8px;
+  }
+  /* line 99, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 107, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-name {
+    font-size: 14px;
+  }
+  /* line 110, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-post {
+    font-size: 11px;
+  }
+  /* line 114, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 5px;
+  }
+  /* line 117, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

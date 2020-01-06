@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'AG Book Pro Med Cnd';
+    src: url('AGBookPro-MediumCnd.eot');
+    src: url('AGBookPro-MediumCnd.eot?#iefix') format('embedded-opentype'),
+        url('AGBookPro-MediumCnd.woff2') format('woff2'),
+        url('AGBookPro-MediumCnd.woff') format('woff'),
+        url('AGBookPro-MediumCnd.ttf') format('truetype'),
+        url('AGBookPro-MediumCnd.svg#AGBookPro-MediumCnd') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+

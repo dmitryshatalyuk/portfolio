@@ -1,0 +1,121 @@
+@import "variables";
+@media screen and (max-width: 486px) {
+  .main {
+    .why-we-are-chosen {
+      padding-bottom: 0;
+      .wwac-content .agency-features-container {
+        @include flex-direction-col;
+        .feature-row {
+          .feature-box {
+            max-width: 100%;
+
+            &.right {
+              -ms-flex-item-align: end;
+              align-self: flex-end;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: reverse;
+              -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
+              text-align: right;
+
+              .feature-image-box {
+                margin-right: 0;
+                margin-left: 25px;
+              }
+            }
+            .feature-text-box {
+              .feature-text {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .what-do-we-offer .wdwo-content {
+      padding: 0 25px;
+
+      .plans-container {
+        .plan-box {
+          width: 100%;
+          &:nth-child(1),
+          &:nth-child(3) {
+            border: none;
+          }
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3) {
+            border-bottom: 1px solid $planSvgFill;
+          }
+        }
+      }
+    }
+  }
+
+  .footer .footer-content {
+    .footer-navigation .navigation-list .nav-list-item .nav-link {
+      font-size: 12px;
+    }
+
+    .footer-socials .social-link {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .header .intro {
+    padding: 165px 0;
+
+    .intro-content .intro-text-container {
+      .intro-title {
+        font-size: 30px;
+      }
+      .intro-subtitle {
+        font-size: 20px;
+      }
+      .intro-text {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide {
+    .slide-text {
+      font-size: 12px;
+    }
+
+    .author-box {
+      .author-name-post-box {
+        .author-name {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 8px;
+    .nav-link {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box {
+    .author-name {
+      font-size: 14px;
+    }
+    .author-post {
+      font-size: 11px;
+    }
+  }
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 5px;
+
+    .nav-link {
+      font-size: 9px;
+    }
+  }
+}

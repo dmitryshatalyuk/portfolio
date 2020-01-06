@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "mobile.css",
+	"sources": [
+		"../scss/mobile.scss"
+	],
+	"sourcesContent": [
+		""
+	],
+	"names": [],
+	"mappings": ""
+}

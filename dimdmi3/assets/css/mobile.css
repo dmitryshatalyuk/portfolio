@@ -1,0 +1,118 @@
+/* display flex settings */
+/* */
+@media screen and (max-width: 486px) {
+  /* line 4, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen {
+    padding-bottom: 0;
+  }
+  /* line 6, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  /* line 9, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box {
+    max-width: 100%;
+  }
+  /* line 12, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box.right {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  /* line 21, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box.right .feature-image-box {
+    margin-right: 0;
+    margin-left: 25px;
+  }
+  /* line 27, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .why-we-are-chosen .wwac-content .agency-features-container .feature-row .feature-box .feature-text-box .feature-text {
+    font-size: 13px;
+  }
+  /* line 35, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content {
+    padding: 0 25px;
+  }
+  /* line 39, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box {
+    width: 100%;
+  }
+  /* line 41, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border: none;
+  }
+  /* line 45, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(1), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(2), .main .what-do-we-offer .wdwo-content .plans-container .plan-box:nth-child(3) {
+    border-bottom: 1px solid #b6b6b6;
+  }
+  /* line 56, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 12px;
+  }
+  /* line 60, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-socials .social-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  /* line 67, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro {
+    padding: 165px 0;
+  }
+  /* line 71, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-title {
+    font-size: 30px;
+  }
+  /* line 74, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-subtitle {
+    font-size: 20px;
+  }
+  /* line 77, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .header .intro .intro-content .intro-text-container .intro-text {
+    font-size: 13px;
+  }
+  /* line 84, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .slide-text {
+    font-size: 12px;
+  }
+  /* line 90, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-name {
+    font-size: 20px;
+  }
+  /* line 97, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 8px;
+  }
+  /* line 99, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 107, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-name {
+    font-size: 14px;
+  }
+  /* line 110, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .main .feedbacks .feedbacks-container .feedback-slider .feedback-slide .author-box .author-name-post-box .author-post {
+    font-size: 11px;
+  }
+  /* line 114, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item {
+    margin: 0 5px;
+  }
+  /* line 117, C:/Users/Dmitry/Desktop/dimdmi3/assets/scss/mobile.scss */
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 9px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

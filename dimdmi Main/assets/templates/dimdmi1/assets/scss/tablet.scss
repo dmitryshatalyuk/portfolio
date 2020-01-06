@@ -1,0 +1,182 @@
+@media screen and (max-width: 850px) {
+  .header {
+    padding: 15px 0;
+    position: fixed;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.22);
+  }
+  .header-wrapper {
+    max-width: 95%;
+  }
+  .navigation {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    background-color: $white;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    @include defaultTransition;
+    padding: 10px 0;
+  }
+  .nav-shown {
+    visibility: visible;
+    opacity: 1;
+    top: 85px;
+    -webkit-box-shadow: 0 15px 8px -2px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 15px 8px -2px rgba(0, 0, 0, 0.22);
+  }
+  .nav-links-container {
+    @include flex-direction-col;
+    @include align-items-center;
+  }
+  .bars-box {
+    display: block;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 25px;
+    width: 39px;
+    padding: 0;
+  }
+  .bar {
+    width: 38px;
+    height: 6px;
+    background-color: $blue;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    // -webkit-transition: all 0.25s /*cubic-bezier(.68, -.95, .265, 1.95)*/ ease-in-out;
+    // transition: all 0.25s /*cubic-bezier(.68, -.95, .265, 1.95)*/ ease-in-out;
+    @include defaultTransition;
+  }
+  .footer-bar {
+    background-color: $white;
+  }
+  .bar1 {
+    top: 0;
+  }
+  .bar3 {
+    top: 100%;
+  }
+  .bar1-clicked {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 50%;
+  }
+  .bar2-clicked {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .nav-links-box {
+    margin: 0;
+    width: 95%;
+  }
+  .nav-link {
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .intro-container {
+    max-width: 85%;
+  }
+  .intro-title {
+    font-size: 38px;
+  }
+  .intro-text {
+    font-size: 16px;
+  }
+  .main {
+    padding: 0 20px;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about-left-box {
+    max-width: 100%;
+  }
+  .about-right-box {
+    width: 100%;
+    padding: 0px;
+    margin: 50px 0;
+  }
+  .about-right-box--image-big {
+    height: 479px;
+  }
+  .contacts-container-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contacts-container {
+    width: 100%;
+  }
+  .contacts-info-box {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .contacts-info-title {
+    color: $black;
+    font-family: "AG Book Pro";
+    font-size: 30px;
+    font-weight: $default;
+    letter-spacing: 3px;
+  }
+  .contacts-text {
+    color: $black;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: $thin;
+    letter-spacing: 1.8px;
+  }
+  .form-container {
+    width: 85%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 25px 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reason-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+  .reason-circle-image {
+    height: 180px;
+    width: 180px;
+  }
+  .reason-title {
+    font-size: 39px;
+  }
+  .reason-text {
+    font-size: 18px;
+    width: 278px;
+  }
+  .plan-box {
+    width: 480px;
+    margin-top: 60px;
+  }
+  .plan-title {
+    font-size: 39px;
+    font-family: "Roboto";
+    font-weight: $thin;
+  }
+  .benefit {
+    font-size: 30px;
+    line-height: 67px;
+  }
+  .order-button {
+    font-size: 46px;
+  }
+}

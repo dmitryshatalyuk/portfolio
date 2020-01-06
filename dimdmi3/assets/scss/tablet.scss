@@ -1,0 +1,222 @@
+@import "variables";
+@media screen and (max-width: 851px) {
+  .header {
+    .header-wrapper {
+      position: relative;
+
+      .navigation {
+        @include slowTransition;
+        position: absolute;
+        width: 100%;
+        top: 95px;
+        left: 0;
+        .navigation-list {
+          @include flex-direction-col;
+
+          .nav-list-item {
+            -webkit-transform: translate3d(110%, 0, 0);
+            transform: translate3d(110%, 0, 0);
+            width: 80%;
+            text-align: center;
+            @include slowTransition;
+            margin: 0;
+            margin-bottom: 20px;
+            &.nav-list-item-shown {
+              -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+            }
+            &:nth-child(2) {
+              -webkit-transition-delay: 0.1s;
+              transition-delay: 0.1s;
+            }
+            &:nth-child(3) {
+              -webkit-transition-delay: 0.2s;
+              transition-delay: 0.2s;
+            }
+            &:nth-child(4) {
+              -webkit-transition-delay: 0.3s;
+              transition-delay: 0.3s;
+            }
+            &:nth-child(5) {
+              -webkit-transition-delay: 0.4s;
+              transition-delay: 0.4s;
+            }
+
+            .nav-link {
+              font-size: 18px;
+              &::after {
+                display: none;
+              }
+              &.question {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      .bars-box {
+        display: block;
+        width: 32px;
+        height: 22px;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+
+        .bar {
+          width: 32px;
+          height: 4px;
+          display: block;
+          background-color: $white;
+          border-radius: 2px;
+          position: absolute;
+          @include slowTransition;
+          &.bar1 {
+            top: 0;
+            &.bar1-clicked {
+              -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
+              top: 9px;
+            }
+          }
+          &.bar2 {
+            top: 9px;
+            &.bar2-clicked {
+              -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+            }
+          }
+          &.bar3 {
+            top: 18px;
+            &.bar1-clicked {
+              -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg);
+              top: 9px;
+            }
+          }
+        }
+      }
+    }
+    .intro {
+      .intro-content {
+        max-width: 90%;
+        .intro-text-container {
+          max-width: 100%;
+          .intro-title {
+            font-size: 37px;
+          }
+          .intro-subtitle {
+            font-size: 30px;
+          }
+          .intro-text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    .why-we-are-chosen .wwac-content .agency-features-container {
+      @include flexbox;
+      @include justify-content-space-around;
+
+      .feature-row {
+        @include flex-direction-col;
+        margin: 0;
+
+        .feature-box {
+          max-width: 90%;
+          margin-bottom: 60px;
+        }
+      }
+    }
+    .how-we-work {
+      padding: 57px 0 0;
+
+      .hww-content .steps-container {
+        @include flex-wrap-wrap;
+
+        .step {
+          margin-bottom: 70px;
+
+          .step-circle {
+            height: 200px;
+            width: 200px;
+            border: 29px solid #92caff;
+          }
+          .step-title {
+            letter-spacing: 2.3px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .what-do-we-offer .wdwo-content .plans-container {
+      @include flex-wrap-wrap;
+
+      .plan-box {
+        width: 50%;
+        border: none;
+        &:nth-child(1),
+        &:nth-child(3) {
+          border-right: 1px solid $planSvgFill;
+        }
+        &:nth-child(1),
+        &:nth-child(2) {
+          border-bottom: 1px solid $planSvgFill;
+        }
+      }
+    }
+    .feedbacks .feedbacks-container {
+      padding: 0 50px;
+    }
+  }
+
+  .footer {
+    .footer-content {
+      @include flex-direction-col;
+      .footer-navigation {
+        margin-bottom: 25px;
+        .navigation-list .nav-list-item .nav-link {
+          font-size: 18px;
+        }
+      }
+      .footer-socials .social-link {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url(../images/tablet-header-back.png);
+    position: relative;
+    z-index: 10;
+
+    .intro {
+      padding: 234px 0;
+    }
+  }
+  .main {
+    position: relative;
+    z-index: 2;
+    top: -35px;
+    margin-bottom: -35px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  .main .feedbacks .feedbacks-container {
+    padding: 0 20px;
+
+    .feedback-slider .feedback-slide .slide-text {
+      max-width: 96%;
+    }
+  }
+  .footer .footer-content .footer-navigation .navigation-list .nav-list-item .nav-link {
+    font-size: 14px;
+  }
+}

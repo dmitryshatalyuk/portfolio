@@ -1,0 +1,709 @@
+@import "variables";
+
+body {
+  font-family: $textFont;
+}
+/* Keyframes */
+@-webkit-keyframes dot1Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@keyframes dot1Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-webkit-keyframes dot2Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 39px;
+  }
+}
+@keyframes dot2Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 39px;
+  }
+}
+@-webkit-keyframes dot3Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 53px;
+  }
+}
+@keyframes dot3Animation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 53px;
+  }
+}
+
+/* */
+/* Header */
+.header {
+  @include bgImageSet;
+  background-image: url(../images/intro-back.png);
+  overflow-x: hidden;
+
+  .header-wrapper {
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    padding: 20px 15px;
+    @include flexbox;
+    @include align-items-center;
+    @include justify-content-space-between;
+
+    /* Logo */
+    .logo-container {
+      display: block;
+
+      .logo {
+        color: $default;
+        font-family: $titlesFont;
+        font-size: 40px;
+        font-weight: $bold;
+
+        .logo-span {
+          font-size: 25px;
+        }
+
+        .logo-span--I {
+          font-size: 32px;
+        }
+      }
+
+      .logo-name {
+        color: #7f7f7f;
+        font-family: $titlesFont;
+        font-size: 9px;
+        font-weight: $thin;
+        text-transform: uppercase;
+        letter-spacing: 9.4px;
+      }
+    }
+    /*  */
+    .bars-box {
+      display: none;
+    }
+    .navigation {
+      .navigation-list {
+        @include flexbox;
+        @include align-items-center;
+        @include justify-content-space-between;
+
+        .nav-list-item {
+          margin: 0 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .nav-link {
+            display: block;
+            color: $white;
+            font-family: $titlesFont;
+            font-size: 14px;
+            font-weight: $regular;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            position: relative;
+            &:after {
+              @include defaultTransition;
+              content: "";
+              display: block;
+              height: 1px;
+              width: 10px;
+              background-color: $white;
+              position: absolute;
+              bottom: -1px;
+              right: 0;
+            }
+            &:hover::after {
+              width: 100%;
+            }
+          }
+          .nav-link.question {
+            padding: 10px 25px;
+            background-color: $default;
+            border-radius: 25px;
+            @include defaultTransition;
+            &::after {
+              display: none;
+            }
+            &:hover {
+              -webkit-filter: brightness(93%);
+              filter: brightness(93%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .intro {
+    padding: 225px 0;
+
+    .intro-content {
+      max-width: $maxContentWidth;
+      margin: 0 auto;
+
+      .intro-text-container {
+        max-width: 870px;
+        margin: 0 auto;
+        text-align: center;
+
+        .intro-title {
+          color: $white;
+          font-family: $titlesFont;
+          font-size: 48px;
+          font-weight: $bold;
+          text-transform: uppercase;
+          letter-spacing: 4.8px;
+        }
+        .intro-subtitle {
+          color: $white;
+          font-family: $titlesFont;
+          font-weight: $bold;
+          text-transform: uppercase;
+          font-size: 37px;
+          letter-spacing: 3.7px;
+        }
+
+        .intro-text {
+          display: block;
+          margin-top: 30px;
+          color: $white;
+          font-family: $textFont;
+          font-size: 18px;
+          font-weight: $thin;
+          line-height: 27px;
+          letter-spacing: 1.8px;
+        }
+      }
+
+      .go-down-link-container {
+        @include flexbox;
+        @include justify-content-center;
+        margin-top: 35px;
+
+        .go-down-link {
+          display: block;
+          margin: 0 auto;
+
+          .dot {
+            -webkit-animation: dot3Animation 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s infinite alternate;
+            animation: dot3Animation 1s cubic-bezier(0.895, 0.03, 0.685, 0.22) 0s infinite alternate;
+            position: relative;
+            display: block;
+            height: 14px;
+            width: 14px;
+            background-color: $white;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            &.dot1 {
+              -webkit-animation-name: dot1Animation;
+              animation-name: dot1Animation;
+              -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
+            }
+            &.dot2 {
+              -webkit-animation-name: dot2Animation;
+              animation-name: dot2Animation;
+              -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* */
+.title {
+  text-align: center;
+  font-family: $titlesFont;
+  font-size: 29px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  letter-spacing: 2.9px;
+}
+/* Main */
+
+.main {
+  .why-we-are-chosen {
+    background-color: $default;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .wwac-content {
+      max-width: $maxContentWidth;
+      padding: 0 15px;
+      margin: 0 auto;
+
+      .wwac-title {
+        color: $white;
+      }
+
+      .agency-features-container {
+        margin-top: 55px;
+
+        // feature row
+        .feature-row {
+          @include flexbox;
+          @include justify-content-space-between;
+          @include align-items-center;
+          @include flex-wrap-wrap;
+          margin-bottom: 75px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          // feature box
+          .feature-box {
+            @include flexbox;
+            @include justify-content-space-between;
+            max-width: 30%;
+
+            // feature images
+            .feature-image-box {
+              height: 77px;
+              width: 77px;
+              margin-right: 20px;
+
+              .svg {
+                height: 77px;
+                width: 77px;
+                fill: $white;
+              }
+            }
+
+            .feature-text-box {
+              max-width: 315px;
+              @include flexbox;
+              @include flex-direction-col;
+              @include justify-content-center;
+
+              // feature title
+              .feature-title {
+                color: $white;
+                font-family: $textFont;
+                font-size: 17px;
+                font-weight: $regular;
+                letter-spacing: 2.4px;
+              }
+
+              // feature text
+              .feature-text {
+                color: $white;
+                font-family: $textFont;
+                font-size: 14px;
+                font-weight: $thin;
+                line-height: 22px;
+                letter-spacing: 1.8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .how-we-work {
+    padding: 57px 0 61px;
+    overflow-x: hidden;
+
+    .hww-content {
+      max-width: $maxContentWidth;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      .hww-title {
+        color: $default;
+      }
+
+      .steps-container {
+        margin-top: 35px;
+        @include flexbox;
+        @include justify-content-space-between;
+
+        .step {
+          text-align: center;
+          margin: 0 auto;
+
+          .arrow-positioning {
+            position: relative;
+            height: 0;
+            width: 100%;
+            margin: 0 auto;
+
+            .arrow {
+              position: absolute;
+              height: 75px;
+              top: 90px;
+              right: -72px;
+            }
+          }
+
+          .step-circle {
+            margin: 0 auto;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            background-color: $default;
+            border: 29px solid #92caff;
+            border-radius: 50%;
+            position: relative;
+            @include bgImageSet;
+            background-size: auto;
+
+            &.s1 {
+              background-image: url(../images/pay.png);
+            }
+
+            &.s2 {
+              background-image: url(../images/doc.png);
+            }
+
+            &.s3 {
+              background-image: url(../images/proc.png);
+            }
+
+            &.s4 {
+              background-image: url(../images/finish.png);
+            }
+
+            &.s1,
+            &.s2,
+            &.s3 {
+              .arrow {
+                height: 50px;
+                position: absolute;
+                bottom: 75px;
+                right: -90px;
+              }
+            }
+          }
+
+          .step-text-container {
+            max-width: 255px;
+            margin-top: 33px;
+
+            .step-title {
+              color: $black;
+              font-family: "AGBookProMedCnd", serif;
+              font-size: 24px;
+              font-weight: $bold;
+              text-transform: uppercase;
+              letter-spacing: 3.3px;
+            }
+            .step-text {
+              display: block;
+              margin-top: 5px;
+              color: $black;
+              font-family: $textFont;
+              font-size: 14px;
+              font-weight: $thin;
+              letter-spacing: 1.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .what-do-we-offer {
+    padding-bottom: 65px;
+    overflow-x: hidden;
+
+    .wdwo-content {
+      max-width: $maxContentWidth;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      .wdwo-title {
+        color: $default;
+        margin-bottom: 60px;
+      }
+
+      .plans-container {
+        @include flexbox;
+        @include justify-content-space-between;
+        border: 1px solid $planSvgFill;
+
+        .plan-box {
+          padding: 40px 20px;
+          text-align: center;
+          border-right: 1px solid $planSvgFill;
+          width: 25%;
+          @include defaultTransition;
+          &:last-child {
+            border-right: none;
+          }
+          &:hover,
+          &:active {
+            -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+            border-right: none;
+            background-color: $default;
+            border-radius: 10px;
+            .plan-image,
+            .plan-name,
+            .plan-price,
+            .plan-description,
+            .dpm {
+              color: $white;
+            }
+          }
+
+          .plan-image {
+            color: $planSvgFill;
+            height: 90px;
+            margin-bottom: 30px;
+          }
+
+          .plan-name {
+            color: $planFontColor;
+            font-family: $titlesFont;
+            font-size: 18px;
+            font-weight: $regular;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+          }
+
+          .plan-price {
+            margin: 50px 0 0;
+            color: $planFontColor;
+            font-family: $titlesFont;
+            font-size: 84px;
+            font-weight: $bold;
+            text-transform: uppercase;
+            letter-spacing: 8.4px;
+            text-align: center;
+          }
+          .dpm {
+            display: block;
+            margin: 0 0 50px;
+            color: $planFontColor;
+            font-family: $titlesFont;
+            font-size: 12px;
+            font-weight: $regular;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+          }
+        }
+        .plan-description {
+          color: $planFontColor;
+          font-family: $titlesFont;
+          font-size: 14px;
+          font-weight: $regular;
+          letter-spacing: 1.8px;
+          width: 75%;
+          margin: 0 auto;
+        }
+        .order-plan {
+          display: inline-block;
+          margin-top: 30px;
+          color: $black;
+          font-family: $titlesFont;
+          font-size: 18px;
+          font-weight: $regular;
+          text-transform: uppercase;
+          letter-spacing: 1.8px;
+          background-color: $white;
+          border: 1px solid $planSvgFill;
+          padding: 10px 55px;
+          border-radius: 25px;
+          @include defaultTransition;
+          &:hover {
+            -webkit-filter: brightness(93%);
+            filter: brightness(93%);
+          }
+        }
+      }
+    }
+  }
+
+  .feedbacks {
+    padding: 36px 0;
+    @include bgImageSet;
+    background-image: url(../images/slider-back.png);
+
+    .feedbacks-container {
+      max-width: $maxContentWidth;
+      margin: 0 auto;
+      padding: 0 15px;
+
+      .feedback-title {
+        color: $white;
+      }
+
+      .feedback-slider {
+        margin-top: 33px;
+
+        .feedback-slide {
+          .slide-text {
+            display: block;
+            max-width: 1015px;
+            color: $white;
+            font-family: $textFont;
+            font-size: 14px;
+            font-weight: $thin;
+            line-height: 27px;
+            /* Text style for "Lorem ipsu" */
+            letter-spacing: 1.8px;
+          }
+
+          .author-box {
+            margin-top: 35px;
+            @include flexbox;
+            @include align-items-center;
+
+            .author-name-post-box {
+              margin-left: 28px;
+
+              .author-name {
+                /* Style for "Andrew Wig" */
+                color: $white;
+                font-family: $titlesFont;
+                font-size: 23px;
+                font-weight: $bold;
+                line-height: 27px;
+                letter-spacing: 2.3px;
+              }
+              .author-company {
+                color: $white;
+                font-family: $titlesFont;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 27px;
+                text-transform: uppercase;
+                letter-spacing: 1.2px;
+              }
+            }
+          }
+        }
+      }
+      .feedback-controls {
+        @include flexbox;
+        @include align-items-center;
+        @include justify-content-space-between;
+        max-width: 150px;
+        margin-top: 33px;
+
+        .prev,
+        .next {
+          border: none;
+          background-color: transparent;
+
+          .img-control {
+            height: 37px;
+            width: 37px;
+            fill: $white;
+            cursor: pointer;
+          }
+        }
+        .pagingInfo {
+          color: $white;
+          font-family: $textFont;
+          font-size: 19px;
+          font-weight: $thin;
+          text-transform: uppercase;
+          letter-spacing: 2.4px;
+        }
+      }
+    }
+  }
+}
+
+/* */
+.footer {
+  background-color: $footerBackColor;
+  padding: 54px 0;
+
+  .footer-content {
+    padding: 0 15px;
+    max-width: $maxContentWidth;
+    margin: 0 auto;
+    @include flexbox;
+    @include justify-content-space-between;
+    @include align-items-center;
+
+    .footer-navigation {
+      .navigation-list {
+        @include flexbox;
+        .nav-list-item {
+          margin: 0 15px;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+          .nav-link {
+            color: $white;
+            font-family: $titlesFont;
+            font-size: 14px;
+            font-weight: $regular;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+          }
+        }
+      }
+    }
+    .footer-socials {
+      @include flexbox;
+      .social-link {
+        display: block;
+        margin: 0 10px;
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main .how-we-work .hww-content .steps-container .step .step-circle {
+    width: 150px;
+    height: 150px;
+    border: 21px solid #92caff;
+    &.s1,
+    &.s2,
+    &.s3 {
+      &::after {
+        right: -80px;
+        top: 40px;
+      }
+    }
+  }
+
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-box .plan-price {
+    letter-spacing: 0.4px;
+    font-size: 75px;
+  }
+
+  .main .what-do-we-offer .wdwo-content .plans-container .plan-description {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .main .what-do-we-offer .wdwo-content .plans-container .order-plan {
+    padding: 10px 35px;
+  }
+}
+@import "tablet";
+@import "mobile";
